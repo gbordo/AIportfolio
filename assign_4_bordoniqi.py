@@ -58,3 +58,5 @@ data['token_clean_summary']= data['clean_summary'].apply(word_tokenize)
 list_of_clean_tokens = data['token_clean_summary'].to_list()
 
 print(f'There are {len(list_of_clean_tokens)} clean tokens')
+
+print(f'Here are a subset of clean Tokens \n {list_of_clean_tokens[0:10]}')
