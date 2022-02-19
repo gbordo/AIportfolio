@@ -9,6 +9,9 @@ import string
 import os
 
 
+
+nltk.download('omw-1.4')
+nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('punkt')
 
@@ -16,7 +19,6 @@ nltk.download('punkt')
 #perform tokenization 
 #perform stemming 
 #perform lemmatization
-
 
 data = pd.read_csv(f'{os.getcwd()}/data/Musical_instruments_reviews.csv')
 
