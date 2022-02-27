@@ -35,4 +35,4 @@ other_variables = [ i for i in data.columns if i not in transformed_cols]
 train_data = pd.merge(cat_var,data[other_variables],left_index=True, right_index=True)
 
 print("Sample of all training data after converting categorical variables: \n")
-train_data
+print(train_data)
